@@ -1,0 +1,18 @@
+{
+    "name": "oscarock/prueba-tecnica-oscar-diaz-php",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oscarock\\PruebaTecnicaOscarDiazPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oscar Diaz",
+            "email": "oscarock02@gmail.com"
+        }
+    ]
+}
