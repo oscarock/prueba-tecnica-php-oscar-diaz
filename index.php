@@ -2,25 +2,26 @@
 
 require_once 'vendor/autoload.php';
 
-use Oscarock\PruebaTecnicaOscarDiazPhp\User;
+use Oscarock\PruebaTecnicaOscarDiazPhp\UserController;
 use Oscarock\PruebaTecnicaOscarDiazPhp\UserRepository;
 
-//crea el usuario
-$user = new User(5, "Oscar Diaz", "oscarock02@gmail.com", "123456");
+// Crea el controlador de usuario con el repositorio
 $userRepository = new UserRepository();
-$userRepository->save($user);
+$userController = new UserController($userRepository);
 
-// Actualizar el usuario en el repositorio
-$updatedUser = new User(5, "Oscar Felipe Diaz", "oscarock02@gmail.com", "123456789");
-$userRepository->update($updatedUser);
+// Crea el usuario
+$userController->createUser(5, "Oscar Diaz", "oscarock02@gmail.com", "123456");
 
-$updatedUserFromRepository = $userRepository->findUserById(5);
+// Actualiza el usuario
+$userController->updateUser(5, "Oscar Felipe Diaz", "oscarock02@gmail.com", "123456789");
 
-echo "Nombre actualizado: " . $updatedUserFromRepository->getName() . "\n";
-echo "Correo electrónico actualizado: " . $updatedUserFromRepository->getEmail() . "\n";
-echo "Contraseña actualizada: " . $updatedUserFromRepository->getPassword() . "\n";
+// Imprime la información actualizada del usuario
+$updatedUser = $userRepository->findUserById(5);
+echo "Nombre actualizado: " . $updatedUser->getName() . "\n";
+echo "Correo electrónico actualizado: " . $updatedUser->getEmail() . "\n";
+echo "Contraseña actualizada: " . $updatedUser->getPassword() . "\n";
 
-//elimina el usuario
-$userRepository->delete(5);
+// Elimina el usuario
+$userController->deleteUser(5);
 
 
