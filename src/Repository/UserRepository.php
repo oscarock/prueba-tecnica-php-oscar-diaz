@@ -1,6 +1,7 @@
 <?php
 
-namespace Oscarock\PruebaTecnicaOscarDiazPhp;
+namespace Oscarock\PruebaTecnicaOscarDiazPhp\Repository;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Model\User;
 
 class UserRepository
 {

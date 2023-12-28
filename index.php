@@ -2,8 +2,8 @@
 
 require_once 'vendor/autoload.php';
 
-use Oscarock\PruebaTecnicaOscarDiazPhp\UserController;
-use Oscarock\PruebaTecnicaOscarDiazPhp\UserRepository;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Controller\UserController;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Repository\UserRepository;
 
 // Crea el controlador de usuario con el repositorio
 $userRepository = new UserRepository();

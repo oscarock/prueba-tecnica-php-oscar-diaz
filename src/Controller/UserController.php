@@ -1,6 +1,8 @@
 <?php
 
-namespace Oscarock\PruebaTecnicaOscarDiazPhp;
+namespace Oscarock\PruebaTecnicaOscarDiazPhp\Controller;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Repository\UserRepository;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Model\User;
 
 class UserController
 {

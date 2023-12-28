@@ -1,6 +1,6 @@
 <?php
 
-namespace Oscarock\PruebaTecnicaOscarDiazPhp;
+namespace Oscarock\PruebaTecnicaOscarDiazPhp\Model;
 
 class User
 {

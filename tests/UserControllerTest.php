@@ -3,9 +3,9 @@
 namespace Oscarock\PruebaTecnicaOscarDiazPhp\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Oscarock\PruebaTecnicaOscarDiazPhp\UserController;
-use Oscarock\PruebaTecnicaOscarDiazPhp\User;
-use Oscarock\PruebaTecnicaOscarDiazPhp\UserRepository;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Controller\UserController;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Model\User;
+use Oscarock\PruebaTecnicaOscarDiazPhp\Repository\UserRepository;
 
 class UserControllerTest extends TestCase
 {
